@@ -4,9 +4,8 @@ variable "region" {
 
 variable "tags" {
   description = "AWS Tags to add to all resources created (where possible); see https://aws.amazon.com/answers/account-management/aws-tagging-strategies/"
-  type        = "map"
-  default     = {}
-}
+  type        = map(string)
+  }
 variable "site_domain" {
   description = "The primary domain name of the website"
 }
