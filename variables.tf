@@ -13,6 +13,7 @@ variable "site_domain" {
 
 variable "bucket_name" {
   description = "The name of the S3 bucket wich would host the static files"
+  default = "franchic.com"
 }
 
 variable "cf_price_class" {
